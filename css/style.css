@@ -1,0 +1,410 @@
+@font-face {
+  font-family: "nevis";
+  src: url(../css/fonts/nevis.eot);
+  src: url(../css/fonts/nevis.eot?#iefix) format("embedded-opentype"),
+    url(../css/fonts/nevis.woff) format("woff"),
+    url(../css/fonts/nevis.ttf) format("truetype"),
+    url(../css/fonts/nevis.svg) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "fajala";
+  src: url("../css/fonts/FjallaOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Icons";
+  src: url(../css/fonts/websymbols-regular-webfont.svg#WebSymbolsRegular)
+      format("svg"),
+    url(../css/fonts/websymbols-regular-webfont.eot);
+  src: url(../css/fonts/websymbols-regular-webfont.eot?#iefix)
+      format("embedded-opentype"),
+    url(../css/fonts/websymbols-regular-webfont.woff) format("woff"),
+    url(../css/fonts/websymbols-regular-webfont.ttf) format("truettype");
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-image: url(../img/paven.png);
+}
+
+a {
+  color: #529125;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #193a02;
+}
+
+a:visited {
+  color: #97f156;
+}
+
+#Header {
+  min-width: 1024px;
+  width: 100%;
+  height: 250px;
+  margin: 0% auto;
+}
+
+#Header .Logo {
+  width: 770px;
+  margin: 0% auto;
+  padding-top: 20px;
+}
+
+#Header .Logo img {
+  display: block;
+  text-align: center;
+  margin: 0% auto;
+  width: 150px;
+}
+
+.TituloPrincipal {
+  text-align: center;
+  font-size: 40px;
+  font-family: "nevis";
+  letter-spacing: 4px;
+  margin-top: 10px;
+  text-shadow: 0px 2px 1px #333333;
+  transition: all 300ms;
+}
+
+#Header .TituloPrincipal:hover {
+  text-shadow: 0px 2px 1px #333333, 0px 0px 5px #70b231;
+}
+
+.TituloPrincipal a {
+  text-decoration: none;
+  color: #70b231;
+}
+
+.Icons {
+  font-family: "Icons";
+  float: left;
+  margin-right: 5px;
+  margin-top: -1px;
+  color: #3333;
+}
+
+/*Barra de Navegacion*/
+input[type="text"],
+input[type="email"],
+input[type="Password"],
+select {
+  border-radius: 3px;
+  box-shadow: 0px 0px 2px #ccc inset;
+  padding: 2px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  color: gray;
+  transition: all 300ms;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="Reset"],
+button {
+  display: block;
+  border-radius: 5px;
+  background-color: #70b231;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  color: white;
+  padding: 3px;
+  width: 60px;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="Reset"]:hover,
+button:hover {
+  box-shadow: 0px 0px 4px palevioletred inset;
+}
+
+#Navegacion {
+  width: 100%;
+  height: 40px;
+  background-color: #333333;
+  font-family: sans-serif, Arial, Helvetica;
+  font-size: 15px;
+  box-shadow: 0px 0px 3px grey;
+}
+
+#Navegacion ul {
+  margin: 0% auto;
+  width: 1130px;
+  list-style: none;
+}
+
+#Navegacion a {
+  display: block;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+#Navegacion > ul > li {
+  line-height: 40px;
+  float: left;
+  border-right: 2px solid gray;
+  transition: 1000ms;
+}
+
+#Navegacion > ul > li:first-child {
+  border-left: 2px solid gray;
+}
+
+#Navegacion > ul > li:hover {
+  background-color: #70b231;
+  box-shadow: 0px 0px 10px green inset;
+}
+
+/*Menu Desplegable*/
+#Navegacion > ul > li > ul > li > a {
+  color: rgba(34, 56, 23, 0.884);
+}
+
+#Navegacion > ul > li > ul {
+  display: none;
+  position: absolute;
+  color: black;
+  text-align: left;
+  width: 130px;
+  box-shadow: 0px 2px 2px gray;
+  z-index: 1;
+}
+
+#Navegacion > ul > li:hover > ul {
+  display: block;
+  background-color: #fdf4f4;
+}
+
+#Navegacion > ul > li > ul > li:hover {
+  background-color: #3333;
+  box-shadow: 0px 0px 10px green inset;
+}
+
+#Navegacion > ul > li > ul > li {
+  line-height: 40px;
+  float: top;
+  border-bottom: 2px solid gray;
+  transition: 1000ms;
+  border-radius: 3px;
+}
+
+/*Contenido*/
+#Contenido {
+  width: 1250px;
+  min-height: 1100px;
+  margin: 0% auto;
+}
+
+/*Barra Lateral*/
+
+#BarraLateral,
+#Frase {
+  width: 200px;
+  float: left;
+  margin: 30px;
+  background-color: white;
+  border: 1px solid #333333;
+  box-shadow: 0px 4px 4px #333333;
+  font-family: sans-serif, Arial, Helvetica;
+}
+
+#Frase {
+  width: 180px;
+  padding: 10px;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+#BarraLateral .Login {
+  display: block;
+  width: 180px;
+  margin: 5px auto;
+  padding: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 14px;
+  border-bottom: 1px dashed #333333;
+}
+
+#BarraLateral .Login:last-child {
+  margin-bottom: 20px;
+}
+
+#BarraLateral h3 {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-bottom: 15px;
+  background: #f2f3f2;
+  border: 1 solid #ccc;
+  border-left: none;
+  border-right: none;
+}
+
+#BarraLateral li {
+  margin-top: 8px;
+  margin-left: 20px;
+  margin-bottom: 5px;
+  list-style: square;
+}
+
+#BarraLateral .TituloB2 {
+  color: blue;
+}
+
+#BarraLateral .TituloB3 {
+  color: brown;
+}
+
+#BarraLateral a:hover {
+  color: #b5d309;
+}
+
+#Frase a:hover {
+  color: #b5d309;
+}
+
+.Login ul li a:hover {
+  color: #b5d309;
+}
+
+/*Formulario Lateral*/
+
+#BarraLateral div label,
+#BarraLateral div input[type="text"],
+#BarraLateral div input[type="email"],
+#BarraLateral div input[type="password"],
+#BarraLateral div a {
+  display: block;
+  width: 95%;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+#BarraLateral div input[type="button"],
+#BarraLateral div input[type="submit"],
+button {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+#BarraLateral input,
+#BarraLateral label {
+  margin: 0px auto;
+  text-align: center;
+}
+/*COntenido Central*/
+
+#Seccion {
+  float: right;
+  width: 75%;
+  font-family: sans-serif;
+  margin-right: 20px;
+}
+
+#Seccion .Titulo2 {
+  font-size: 25px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  text-align: center;
+  padding-top: 20px;
+  margin-top: -15px;
+  padding-bottom: 10px;
+  font-family: "fajala";
+  border-bottom: 1px solid black;
+}
+
+#Seccion section {
+  margin-top: 40px;
+  background-color: white;
+  padding: 20px;
+  border: 1 solid #ccc;
+  box-shadow: 0px 0px 4px #c9c9c9;
+  color: #333333;
+  font-size: 15px;
+}
+
+#Seccion .Articulo {
+  margin: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#Seccion .Datos {
+  color: gray;
+  font-size: 14px;
+}
+
+#Seccion .Sticker1,
+#Seccion .Sticker2 {
+  position: absolute;
+  margin-top: -40px;
+  z-index: 0;
+}
+
+#Seccion .Articulo a:hover {
+  color: #b5d309;
+}
+
+#Seccion .Sticker2 {
+  margin-left: 64%;
+}
+
+.red {
+  color: brown;
+}
+
+.Amarillo {
+  color: sandybrown;
+}
+
+.Clearfix {
+  float: none;
+  clear: both;
+}
+
+/*footer*/
+
+.Historia {
+  float: right;
+  margin-top: 20px;
+  margin-right: 70px;
+  font-family: sans-serif, Arial, Helvetica;
+}
+
+.Historia a:hover{
+  color: #b5d309;
+}
+.Copy a:hover {
+  color: #b5d309;
+}
+
+#Footer {
+  width: 100%;
+  margin: 0% auto;
+  text-align: center;
+  padding-top: 5px;
+  margin-top: 50px;
+  padding-bottom: 5px;
+  color: white;
+  font-size: 15px;
+  font-family: sans-serif, Arial, Helvetica;
+  background-color: #333333;
+}
